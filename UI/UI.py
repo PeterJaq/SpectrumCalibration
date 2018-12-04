@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui.ui'
+# Form implementation generated from reading ui file 'UI.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -8,12 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_MainWindow(QtWidgets.QMainWindow):
-    def __init__(self):
-        super(Ui_MainWindow,self).__init__()
-        self.setupUi(self)
-        self.retranslateUi(self)
-
+class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1364, 778)
@@ -29,19 +24,19 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label.setGeometry(QtCore.QRect(10, 20, 191, 16))
         self.label.setObjectName("label")
         self.groupBox = QtWidgets.QGroupBox(self.groupBox_2)
-        self.groupBox.setGeometry(QtCore.QRect(30, 500, 191, 141))
+        self.groupBox.setGeometry(QtCore.QRect(30, 460, 191, 181))
         self.groupBox.setObjectName("groupBox")
         self.LinearBox = QtWidgets.QCheckBox(self.groupBox)
         self.LinearBox.setGeometry(QtCore.QRect(10, 20, 71, 16))
         self.LinearBox.setObjectName("LinearBox")
         self.GaussBox = QtWidgets.QCheckBox(self.groupBox)
-        self.GaussBox.setGeometry(QtCore.QRect(10, 110, 151, 16))
+        self.GaussBox.setGeometry(QtCore.QRect(10, 140, 151, 16))
         self.GaussBox.setObjectName("GaussBox")
         self.QuadraticBox = QtWidgets.QCheckBox(self.groupBox)
-        self.QuadraticBox.setGeometry(QtCore.QRect(10, 50, 171, 16))
+        self.QuadraticBox.setGeometry(QtCore.QRect(10, 60, 171, 16))
         self.QuadraticBox.setObjectName("QuadraticBox")
         self.CubicBox = QtWidgets.QCheckBox(self.groupBox)
-        self.CubicBox.setGeometry(QtCore.QRect(10, 80, 151, 16))
+        self.CubicBox.setGeometry(QtCore.QRect(10, 100, 151, 16))
         self.CubicBox.setObjectName("CubicBox")
         self.label_2 = QtWidgets.QLabel(self.groupBox_2)
         self.label_2.setGeometry(QtCore.QRect(10, 80, 141, 16))
@@ -52,21 +47,46 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.lineEdit_2 = QtWidgets.QLineEdit(self.groupBox_2)
         self.lineEdit_2.setGeometry(QtCore.QRect(10, 110, 221, 20))
         self.lineEdit_2.setObjectName("lineEdit_2")
+        self.layoutWidget = QtWidgets.QWidget(self.groupBox_2)
+        self.layoutWidget.setGeometry(QtCore.QRect(10, 150, 221, 21))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_4 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout.addWidget(self.label_4)
+        self.spinBox_x = QtWidgets.QSpinBox(self.layoutWidget)
+        self.spinBox_x.setMaximum(2048)
+        self.spinBox_x.setObjectName("spinBox_x")
+        self.horizontalLayout.addWidget(self.spinBox_x)
+        self.label_5 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_5.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout.addWidget(self.label_5)
+        self.spinBox_y = QtWidgets.QSpinBox(self.layoutWidget)
+        self.spinBox_y.setMaximum(2048)
+        self.spinBox_y.setObjectName("spinBox_y")
+        self.horizontalLayout.addWidget(self.spinBox_y)
         self.LoadButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.LoadButton_2.setGeometry(QtCore.QRect(1100, 690, 111, 31))
         self.LoadButton_2.setObjectName("LoadButton_2")
         self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
         self.textEdit.setGeometry(QtCore.QRect(460, 400, 621, 321))
         self.textEdit.setObjectName("textEdit")
-        self.graphicsPixel = QtWidgets.QGraphicsView(self.centralwidget)
-        self.graphicsPixel.setGeometry(QtCore.QRect(20, 10, 1061, 381))
-        self.graphicsPixel.setObjectName("graphicsPixel")
-        self.graphicsRaw = QtWidgets.QGraphicsView(self.centralwidget)
-        self.graphicsRaw.setGeometry(QtCore.QRect(20, 400, 431, 321))
-        self.graphicsRaw.setObjectName("graphicsRaw")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(20, 400, 421, 321))
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 10, 1061, 381))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1364, 23))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1364, 18))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -88,5 +108,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.QuadraticBox.setText(_translate("MainWindow", "Quadratic "))
         self.CubicBox.setText(_translate("MainWindow", "Cubic"))
         self.label_2.setText(_translate("MainWindow", "Input fit wavelength"))
+        self.label_4.setText(_translate("MainWindow", "Piexl range"))
+        self.label_5.setText(_translate("MainWindow", "---"))
         self.LoadButton_2.setText(_translate("MainWindow", "Next Line"))
 
