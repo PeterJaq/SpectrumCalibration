@@ -3,11 +3,12 @@
 This is a Spectrum calibration software, build by PyQt5. The Spectrum is based on
 2D CMOS sensor.
 
-## requirment
+## Requirment
 
 ```
 PyQt5 >= 5.11
 PyQt5-tools >= 5.11
+pyqtGraph >= 0.5
 numpy
 ```
 
