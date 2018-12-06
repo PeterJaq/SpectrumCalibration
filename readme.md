@@ -1,7 +1,13 @@
 # Calibration the Spectrum
 
 This is a Spectrum calibration software, build by PyQt5. The Spectrum is based on
-2D CMOS sensor.
+2D CMOS sensor. This software support 2-D or 1-D file format, as JPG, PNG and TIF.
+You can read your data line by line. And it will show your data on top figure.
+![Calibration Software](/software.jpg)
+
+The next part is pick the peak pixel number, and fill this several peak point to
+left input pixel input. And fill the fitted wavelength in the next line. Click the
+fitting button. You will get the fitting coefficient. 
 
 ## Requirment
 
@@ -9,6 +15,7 @@ This is a Spectrum calibration software, build by PyQt5. The Spectrum is based o
 PyQt5 >= 5.11
 PyQt5-tools >= 5.11
 pyqtGraph >= 0.5
+scipy
 numpy
 ```
 
@@ -20,13 +27,4 @@ The project support by L.Y Chen from Fudan Univ. China, Shanghai
 
 ## Appendix:
 
-If you need do any change to this program using Qdesigner, please consider add this follow code on the UI.py
-
-```python
-class Ui_MainWindow(QtWidgets.QMainWindow):
-    def __init__(self):
-        super(Ui_MainWindow,self).__init__()
-        self.setupUi(self)
-        self.retranslateUi(self)
-```
 
