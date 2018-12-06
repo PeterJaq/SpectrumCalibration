@@ -18,6 +18,11 @@ pyqtGraph >= 0.5
 scipy
 numpy
 ```
+## How to use
+
+```python
+python main.py
+```
 
 ## Author and supporter:
 
